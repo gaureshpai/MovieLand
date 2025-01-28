@@ -2,11 +2,7 @@
 
 A sleek and modern movie browsing platform powered by the **IMDb API**. Explore your favorite movies, search by title, and enjoy a seamless movie experience!
 
-<center>
-
 ![MovieLand Logo](./public/android-chrome-192x192.png)
-
-</center>
 
 ## 🚀 **Features**  
 - 🔎 **Search Movies**: Instantly search for any movie by title.  
@@ -53,5 +49,7 @@ We welcome contributions! Follow these steps to contribute:
 3. Commit your changes: `git commit -m "Add feature"`.  
 4. Push to the branch: `git push origin feature-name`.  
 5. Open a pull request. 
+
+This project was inspired by the tutorial from [JavaScript Mastery](https://youtu.be/b9eMGE7QtTk?si=q8ZD19MH7raWw1TS). A big thank you for the amazing content!
 
 **Enjoy MovieLand! 🍿 Your gateway to the cinematic world.**
