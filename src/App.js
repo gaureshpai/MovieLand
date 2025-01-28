@@ -3,9 +3,8 @@ import React from 'react';
 import './index.css'
 import SearchIcon from './search.svg'
 import MovieCard from './components/MovieCard';
-//62b21a52
 
-const API_URL = " http://www.omdbapi.com?apikey=62b21a52";
+const API_URL = "http://www.omdbapi.com?apikey=62b21a52";
  
 const App = () => {
     const [movies, setMovies] = useState([]);
@@ -26,11 +25,17 @@ const App = () => {
             <h1>MovieLand</h1>
 
             <div className='search'>
-                <input 
-                    type='text' 
-                    placeholder='Search for movies...' 
-                    value={searchterm} 
-                    onChange={(e) => {setSearchTerm(e.target.value)}} 
+                <input
+                    type="text"
+                    placeholder="Search for movies..."
+                    value={searchterm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                            searchMovies(searchterm);
+                            console.log("Enter key pressed! Searching for:", searchterm);
+                        }
+                    }}
                 />
                 <img 
                     src={SearchIcon} 
