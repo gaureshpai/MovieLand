@@ -53,7 +53,7 @@ h1 {
 .search input {
     flex: 1;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-raleway);
     font-weight: 500;
     padding-right: 1rem;
@@ -63,15 +63,14 @@ h1 {
 }
 
 .search img {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
 .empty {
     width: 100%;
     margin-top: 3rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,19 +84,19 @@ h1 {
 
 .container {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .movie {
     width: 310px;
     height: 460px;
     margin: 1.5rem;
-
+    cursor: pointer;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -201,6 +200,7 @@ h1 {
 
     .container {
         margin-top: 2rem;
+        justify-content: center;
     }
 
     .movie {

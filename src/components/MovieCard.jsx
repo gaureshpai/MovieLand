@@ -2,7 +2,8 @@ import React from 'react'
 
 const MovieCard = ({searchMovies}) => {
   return (
-      <div className='movie' >
+    <>
+      <div className='movie' onClick={() => window.open(`https://www.imdb.com/title/${searchMovies.imdbID}`, '_blank')}>
           <div>
               <p>{searchMovies.Year}</p>
           </div>
@@ -14,6 +15,7 @@ const MovieCard = ({searchMovies}) => {
               <h3>{searchMovies.Title}</h3>
           </div>
       </div>
+    </>
   )
 }
 
